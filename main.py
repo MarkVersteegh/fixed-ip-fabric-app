@@ -2,12 +2,12 @@ import httpx
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-app = FastAPI(title="Bouwinvest Container App")
+app = FastAPI(title="Test Container App")
 
 
 @app.get("/")
 def root():
-    return {"status": "ok", "message": "Bouwinvest Container App is running"}
+    return {"status": "ok", "message": "Test Container App is running"}
 
 
 @app.get("/ip_address")
