@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/markversteegh/zonip-fabric-app:latest
+          tags: ghcr.io/markversteegh/fixed-ip-fabric-app:latest
