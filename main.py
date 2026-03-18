@@ -8,7 +8,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Bouwinvest Fixed-IP Proxy")
+app = FastAPI(title="Fabric Fixed-IP Proxy")
 
 
 class FetchRequest(BaseModel):
@@ -19,7 +19,7 @@ class FetchRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"status": "ok", "message": "Bouwinvest Fixed-IP Proxy is running"}
+    return {"status": "ok", "message": "Fabric Fixed-IP Proxy is running"}
 
 
 @app.get("/health")
